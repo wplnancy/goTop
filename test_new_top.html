@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>返回到顶部</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 300%;
+            background: -webkit-linear-gradient(top, skyblue, yellowgreen, yellow, brown, orange, pink);
+        }
+
+        #button {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            font-size: 30px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border: 5px solid #000;
+            text-decoration: none;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 50%;
+            font-family: "microsoft yahei";
+            color: #000;
+            -webkit-user-select: none;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<a href="javascript:void 0" id="button">顶</a>
+<script src="utils.js"></script>
+<script src="goTop_new.js">
+
+</script>
+<script>
+    var oBtn = document.getElementById('button');
+
+    var t = new goTop({
+        container: oBtn,
+        effect: true,
+        speed: 120
+    });
+
+
+
+</script>
+</body>
+</html>
